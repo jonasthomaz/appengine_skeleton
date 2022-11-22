@@ -1,0 +1,12 @@
+# Leave those commented out for deploy script to work
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: .*
+  script: routes.public.app
+  #secure: always
+
+env_variables:
+  PYTHONIOENCODING: "utf-8"
